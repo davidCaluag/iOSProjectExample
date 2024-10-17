@@ -6,6 +6,8 @@
     <entity name="Pizza" representedClassName="Pizza" syncable="YES" codeGenerationType="class">
         <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="crust" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateString" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="pizzaSize" optional="YES" attributeType="String"/>
         <attribute name="pizzaTopping" optional="YES" attributeType="String"/>

@@ -13,6 +13,11 @@
 		67EF7E562CC076C90001D4B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67EF7E552CC076C90001D4B7 /* Preview Assets.xcassets */; };
 		67EF7E582CC076C90001D4B7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EF7E572CC076C90001D4B7 /* Persistence.swift */; };
 		67EF7E5B2CC076C90001D4B7 /* MyOrderDavid2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67EF7E592CC076C90001D4B7 /* MyOrderDavid2.xcdatamodeld */; };
+		67EF7E6A2CC0A4170001D4B7 /* PizzasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EF7E692CC0A4170001D4B7 /* PizzasModel.swift */; };
+		67EF7E6C2CC0A42E0001D4B7 /* PizzasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EF7E6B2CC0A42E0001D4B7 /* PizzasViewModel.swift */; };
+		67EF7E6E2CC0A5850001D4B7 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EF7E6D2CC0A5850001D4B7 /* ResultView.swift */; };
+		67EF7E702CC0A5C50001D4B7 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EF7E6F2CC0A5C50001D4B7 /* OrderView.swift */; };
+		67EF7E722CC0B6DD0001D4B7 /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EF7E712CC0B6DC0001D4B7 /* UpdateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		67EF7E552CC076C90001D4B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67EF7E572CC076C90001D4B7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		67EF7E5A2CC076C90001D4B7 /* MyOrderDavid2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyOrderDavid2.xcdatamodel; sourceTree = "<group>"; };
+		67EF7E692CC0A4170001D4B7 /* PizzasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzasModel.swift; sourceTree = "<group>"; };
+		67EF7E6B2CC0A42E0001D4B7 /* PizzasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzasViewModel.swift; sourceTree = "<group>"; };
+		67EF7E6D2CC0A5850001D4B7 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		67EF7E6F2CC0A5C50001D4B7 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		67EF7E712CC0B6DC0001D4B7 /* UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,11 @@
 				67EF7E572CC076C90001D4B7 /* Persistence.swift */,
 				67EF7E592CC076C90001D4B7 /* MyOrderDavid2.xcdatamodeld */,
 				67EF7E542CC076C90001D4B7 /* Preview Content */,
+				67EF7E692CC0A4170001D4B7 /* PizzasModel.swift */,
+				67EF7E6B2CC0A42E0001D4B7 /* PizzasViewModel.swift */,
+				67EF7E6D2CC0A5850001D4B7 /* ResultView.swift */,
+				67EF7E6F2CC0A5C50001D4B7 /* OrderView.swift */,
+				67EF7E712CC0B6DC0001D4B7 /* UpdateView.swift */,
 			);
 			path = MyOrderDavid2;
 			sourceTree = "<group>";
@@ -143,9 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67EF7E6C2CC0A42E0001D4B7 /* PizzasViewModel.swift in Sources */,
 				67EF7E582CC076C90001D4B7 /* Persistence.swift in Sources */,
 				67EF7E512CC076C50001D4B7 /* ContentView.swift in Sources */,
 				67EF7E5B2CC076C90001D4B7 /* MyOrderDavid2.xcdatamodeld in Sources */,
+				67EF7E6E2CC0A5850001D4B7 /* ResultView.swift in Sources */,
+				67EF7E702CC0A5C50001D4B7 /* OrderView.swift in Sources */,
+				67EF7E6A2CC0A4170001D4B7 /* PizzasModel.swift in Sources */,
+				67EF7E722CC0B6DD0001D4B7 /* UpdateView.swift in Sources */,
 				67EF7E4F2CC076C50001D4B7 /* MyOrderDavid2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
