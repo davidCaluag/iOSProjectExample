@@ -24,14 +24,16 @@ struct ResultView: View {
 
         NavigationView {
                 List {
-                    ForEach(vm.pizzaList.sorted(by: {$0.date! > $1.date!}), id: \.self) { singlePizza in
+                    ForEach(vm.pizzaList, id: \.self) { singlePizza in
                         NavigationLink(destination: UpdateView(pizzaOrder: singlePizza)) {
                             Text("\(Int(singlePizza.amount)) \(singlePizza.pizzaTopping!) \(dateFormatter.string(from: singlePizza.date ?? Date()))")
                         }
-                    }
-                    .onDelete(perform: vm.deletePizza)
+                        
+                    }.onDelete(perform: vm.deletePizza)
+
                     
                 }
+            
                 .onAppear(perform: vm.fetchPizzas)
                 .navigationTitle("Pizza Main Page")
                 .toolbar {

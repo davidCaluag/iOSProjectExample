@@ -32,7 +32,7 @@ class PizzasViewModel: ObservableObject {
 //            request.sortDescriptors = [sortDescriptor]
         
         do {
-            pizzaList = try context.fetch(request)
+            pizzaList = try context.fetch(request).sorted(by: {$0.date! > $1.date!})
             print("Pizzas fetched: \(pizzaList.count) items")
         } catch {
             print("Error fetching pizzas: \(error)")
@@ -83,10 +83,11 @@ class PizzasViewModel: ObservableObject {
     }
     
     func deletePizza(indexSet: IndexSet) {
-        for index in indexSet {
-            let pizza = pizzaList[index]
-            context.delete(pizza)
-        }
+        indexSet.map { pizzaList[$0] }.forEach(context.delete)
+//        for index in indexSet {
+//            let pizza = pizzaList[index]
+//            context.delete(pizza)
+//        }
         
         savePizzas() // Save changes after deletion
         fetchPizzas() // Fetch pizzas to refresh the list
