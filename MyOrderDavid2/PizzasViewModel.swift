@@ -32,7 +32,7 @@ class PizzasViewModel: ObservableObject {
 //            request.sortDescriptors = [sortDescriptor]
         
         do {
-            pizzaList = try context.fetch(request).sorted(by: {$0.date! > $1.date!})
+            pizzaList = try context.fetch(request).sorted(by: {($0.date ?? Date()) > ($1.date ?? Date())})
             print("Pizzas fetched: \(pizzaList.count) items")
         } catch {
             print("Error fetching pizzas: \(error)")
