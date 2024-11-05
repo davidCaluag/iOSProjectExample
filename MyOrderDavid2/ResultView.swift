@@ -22,13 +22,13 @@ struct ResultView: View {
     
     var body: some View {
 
-        NavigationView {
-            List {
-                    ForEach(vm.pizzaList, id: \.self) { singlePizza in
-                            NavigationLink(destination: UpdateView(pizzaOrder: singlePizza)) {
-                                Text("\(Int(singlePizza.amount)) \(singlePizza.pizzaTopping!) \(dateFormatter.string(from: singlePizza.date ?? Date()))")
-                            }
-                        }.onDelete(perform: vm.deletePizza)
+    NavigationView {
+        List {
+                ForEach(vm.pizzaList, id: \.self) { singlePizza in
+                        NavigationLink(destination: UpdateView(pizzaOrder: singlePizza)) {
+                            Text("\(Int(singlePizza.amount)) \(singlePizza.pizzaTopping!) \(dateFormatter.string(from: singlePizza.date ?? Date()))")
+                        }
+                    }.onDelete(perform: vm.deletePizza)
 
                     
                 }
